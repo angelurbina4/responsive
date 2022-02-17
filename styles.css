@@ -1,0 +1,38 @@
+.row::after {
+  clear: both;
+  content: "";
+}
+
+.column {
+  float: left;
+  width: 25%;
+  background-color: violet;
+  border: 1px solid black;
+  box-sizing: border-box; /*Todo queda dentro de la caja*/
+}
+
+h2 {
+  font-size: 1.5rem; /*Unidad de tamaño en base al navegador*/
+
+}
+
+/*Pantalla maxima de 992*/
+@media screen and (max-width: 992px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/*Pantalla maxima de 480*/
+@media screen and (max-width: 480px) {
+  .column {
+    width: 100%;
+    background-color: blue;
+  }
+
+  h2 {
+    color: white;
+  }
+  
+}
+
